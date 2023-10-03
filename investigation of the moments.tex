@@ -273,7 +273,73 @@ determined to be 0.3\unit{N}.
 
 \section{Processed data}
 
+Taking the trial with the weight positioned at $0.200\unit{m}$ along the ruler,
+we can determine the predicted force of the spring balance for this trial.
 
+Because the force applied by the pivot point is unknown but the weight of the ruler is known (1.5\unit{N}),
+then only the torque equation defined earlier (shown below) can be used to solve for
+the predicted force of the spring balance.
+$$
+    \left(\left|\vec{W}\right|\cdot D\right) + \left(\left|\vec{L}\right|\cdot D_1\right) - \left(\left|\vec{F}\right|\cdot D_2\right) = 0
+$$
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.65\textwidth]{distanceref}
+    \caption{Reference for distance and positions of objects along ruler}
+    \label{fig:distRef}
+\end{figure}
+
+The calculation for the predicated force of the spring balance given that
+the weight is positioned at $0.200\unit{m}$ along the ruler is shown below,
+with distance values originating from Figure \ref*{fig:distRef}
+
+\begin{align*}
+     & \left(\left|\vec{W}\right|\cdot D\right) + \left(\left|\vec{L}\right|\cdot D_1\right) - \left(\left|\vec{F}\right|\cdot D_2\right) = 0
+\end{align*}
+
+\begin{align*}
+    \text{where } & \left|\vec{W}\right| = \text{ the magnitude of the weight of the ruler } /\unit{N}
+    \\
+                  & \left|\vec{L}\right| = \text{ the magnitude of the weight of the weights suspended on the ruler } /\unit{N}
+    \\
+                  & \left|\vec{F}\right| = \text{ the magnitude of the force applied onto the ruler by the}
+    \\ &\text{ spring balance } /\unit{N}
+    \\
+                  & D = \text{ the distance between the pivot and the ruler's centre of mass } /\unit{m}
+    \\ & D_1 = \text{ the distance between the pivot point and the weights } /\unit{m}
+    \\ & D_2 = \text{ the distance between the pivot point and the spring balance } /\unit{m}
+\end{align*}
+
+\begin{align*}
+    \\
+                       & \left(\left|\vec{F}\right|\cdot D_2\right) = \left(\left|\vec{W}\right|\cdot D\right) + \left(\left|\vec{L}\right|\cdot D_1\right)
+    \\
+    \text{Given that } & \left|\vec{W}\right| = 1.5\unit{N}
+    \\
+                       & \left|\vec{L}\right| = 10\unit{N}
+    \\
+                       & D_2 = 0.900\unit{m} - 0.100\unit{m} = 0.800\unit{m}
+    \\
+                       & D = 0.500\unit{m} - 0.100\unit{m} = 0.400\unit{m}
+    \\
+                       & D_1 = 0.200\unit{m} - 0.100\unit{m} = 0.100\unit{m}
+    \\
+                       & (0.800\unit{m})\cdot \left|\vec{F}\right| = (0.400\unit{m})(1.5\unit{N}) + (0.100\unit{m})(10\unit{N})
+    \\
+                       & \left|\vec{F}\right| = 2.0\unit{N}
+\end{align*}
+
+Continuing with these calculations, the graph in Figure \ref*{fig:predGraph} shows the
+trend of the predicted force of the spring balance with respect to the distance
+between the weights and the pivot point.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{predictedGraph.pdf}
+    \caption{Force measured by spring balance /\unit{N} versus Distance between weights and pivot point along ruler /\unit{m}}
+    \label{fig:predGraph}
+\end{figure}
 
 
 \section{Analysis}
