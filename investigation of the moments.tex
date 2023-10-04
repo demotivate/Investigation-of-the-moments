@@ -46,11 +46,11 @@ The responding variable will be measured using a spring balance.
     \centering
     \begin{tabular}{|l|l|l|}
         \hline
-        Condition                                                                                                  & How to control it                                                                                                                                                            & Why it must be controlled                                                                                                                                                                                                                                                           \\
+        Condition                                                                                                  & How to control it                                                                                                                                                               & Why it must be controlled                                                                                                                                                                                                                                                           \\
         \hline
-        \begin{tabular}[c]{@{}l@{}}The position\\of the pivot\\and spring \\balance\\along the ruler.\end{tabular} & \begin{tabular}[c]{@{}l@{}}Recording each\\trial with the pivot\\and the spring\\balance consistently\\positioned at the exact\\same location along\\the ruler.\end{tabular} & \begin{tabular}[c]{@{}l@{}}Varying the position\\of these objects will\\change the distances\\between the pivot to\\the ruler's center of\\mass, the weights,\\and the spring balance.\\This will ultimately\\cause inconsistencies\\in the calculated torque\\values.\end{tabular} \\
+        \begin{tabular}[c]{@{}l@{}}The position\\of the pivot\\and spring \\balance\\along the ruler.\end{tabular} & \begin{tabular}[c]{@{}l@{}}Recording each\\trial with the pivot\\and the spring\\balance consistently\\positioned at the exact\\same location along\\the ruler.\end{tabular}    & \begin{tabular}[c]{@{}l@{}}Varying the position\\of these objects will\\change the distances\\between the pivot to\\the ruler's center of\\mass, the weights,\\and the spring balance.\\This will ultimately\\cause inconsistencies\\in the calculated torque\\values.\end{tabular} \\
         \hline
-        \begin{tabular}[c]{@{}l@{}}The number\\of weights\\suspended on\\the ruler.\end{tabular}                   & \begin{tabular}[c]{@{}l@{}}Recording each trial\\with the same number\\of weights\\suspended from\\the ruler.\end{tabular}                                                   & \begin{tabular}[c]{@{}l@{}}Varying the number\\of weights suspended\\on the ruler will cause\\the gravitational force\\of the weights\\to vary, affecting\\both calculations\\for net force and\\calculations\\for net torque.\end{tabular}                                         \\
+        \begin{tabular}[c]{@{}l@{}}The number\\of weights\\suspended on\\the ruler.\end{tabular}                   & \begin{tabular}[c]{@{}l@{}}Recording each trial\\with the same number\\of weights\\suspended from\\the ruler (in this\\experiment the weight\\will be 10\unit{N}).\end{tabular} & \begin{tabular}[c]{@{}l@{}}Varying the number\\of weights suspended\\on the ruler will cause\\the gravitational force\\of the weights\\to vary, affecting\\both calculations\\for net force and\\calculations\\for net torque.\end{tabular}                                         \\
         \hline
     \end{tabular}
     \caption{Controlled variables in the experiment}
@@ -113,7 +113,7 @@ With reference to the variables in Figure \ref*{fig:labapparatus}, we can derive
      & \left(\left|\vec{W}\right|\cdot D\right) + \left(\left|\vec{L}\right|\cdot D_1\right) - \left(\left|\vec{F}\right|\cdot D_2\right) = 0
 \end{align*}
 
-\section{Raw data}
+\section{Evidence}
 
 \subsection{Determination of uncertainty in force measured by spring balance}
 
@@ -271,7 +271,9 @@ determined to be 0.3\unit{N}.
 \end{longtable}
 
 
-\section{Processed data}
+\section{Analysis}
+
+\subsection{Processed predicted data}
 
 Taking the trial with the weight positioned at $0.200\unit{m}$ along the ruler,
 we can determine the predicted force of the spring balance for this trial.
@@ -337,11 +339,164 @@ between the weights and the pivot point.
 \begin{figure}[H]
     \centering
     \includegraphics[width=\textwidth]{predictedGraph.pdf}
-    \caption{Force measured by spring balance /\unit{N} versus Distance between weights and pivot point along ruler /\unit{m}}
+    \caption{Predicted Force measured by spring balance /\unit{N} versus Distance between weights and pivot point along ruler /\unit{m}}
     \label{fig:predGraph}
 \end{figure}
 
+The trendline of the graph in Figure \ref*{fig:predGraph}
+has the equation $y=12.5x-0.5$.
 
-\section{Analysis}
+
+\subsection{Processed experimental data}
+
+Taking the recorded data of the actual force measured by the spring balance
+for each trial, we can form a graph and determine the line of best-fit.
+This graph is shown in Figure \ref*{fig:expGraph}.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{expGraph.pdf}
+    \caption{Experimental Force measured by spring balance /\unit{N} versus Distance between weights and pivot point along ruler /\unit{m}}
+    \label{fig:expGraph}
+\end{figure}
+
+Drawing from the graph, we can determine that generally,
+the equation of the best-fit line would be $y=12.635x - 0.5321$.
+There will also be:
+\begin{itemize}
+    \item a trendline of maximum slope ($y = 13.694x - 1.0525$)
+    \item a trendline of minimum slope ($y = 11.709x - 0.0301$)
+\end{itemize}
+
+\subsection{y-intercept of the graph}
+
+The significance of the y-intercept is that it indicates what force would
+be measured by the spring balance if the distance between the weights and
+the pivot point was 0. In other words, what the measured force would be when
+the weights are suspended right above the pivot point.
+
+\subsubsection{Value based off of predicted data}
+
+Based off the line of best-fit in the graph of Figure \ref*{fig:predGraph}
+($y = 12.5x - 0.5$), the y-intercept of the graph is $-0.5\unit{N}$.
+
+What this suggests is that if the weights were suspended at the same
+position as the pivot point, then the spring balance would be pushing
+\textbf{down} with 0.5\unit{N} of force.
+
+\subsubsection{Value based off of experimental data}
+
+While the line of best-fit yields a y-intercept of -0.5321\unit{N},
+this does not equal to the average between the y-intercepts of the
+trendlines with maximum and minimum slope that is -0.5413\unit{N}. Therefore,
+the latter value will be used instead to deduce that the y-intercept of
+the experimental data graph is $-0.5\unit{N} \pm 0.5\unit{N}$.
+
+The calculations for these values are shown below:
+\begin{align*}
+                  & \text{Average calculation:}
+    \\
+                  & \overline{b} = \frac{\sum b_i}{n}
+    \\
+    \text{where } & \overline{b} = \text{ average y-intercept value } /\unit{N}
+    \\ & b_i = \text{ y-intercept value from maximum or minimum trendline } /\unit{N}
+    \\ & n = \text{ number of values averaged }
+    \\
+                  & \overline{b} = \frac{-1.0525\unit{N} - 0.0301\unit{N}}{2}
+    \\
+                  & \overline{b} = -0.5413\unit{N}
+    \\
+                  & \text{Final y-intercept of experimental data graph calculation:}
+    \\
+                  & b = \overline{b} \pm (b_{min} - b_{max})
+    \\
+    \text{where } & b_{min} = \text{ y-intercept value of trendline with minimum slope } /\unit{N}
+    \\ & b_{max} = \text{ y-intercept value of trendline with maximum slope } /\unit{N}
+    \\
+                  & b = -0.5413\unit{N} \pm (-0.0301\unit{N} + 1.0525\unit{N})
+    \\
+                  & b = -0.5\unit{N} \pm 0.5\unit{N}
+\end{align*}
+
+What this suggests is that if the weights were suspended at the same
+position as the pivot point, then the spring balance would be pushing
+\textbf{down} with $-0.5\unit{N} \pm 0.5\unit{N}$ of force.
+
+\subsubsection{Comparison of predicted y-intercept and experimental y-intercept}
+
+Given the experimental value of $-0.5\unit{N} \pm 0.5\unit{N}$,
+the predicted value (-0.5\unit{N}) falls within the range of the
+experimental value's uncertainty.
+
+However, when doing a mathematical calculation to compare the experimental
+value to the predicted value, we will use the experimental
+y-intercept which came from the original line of best-fit
+(-0.5321\unit{N}).
+
+Below shows the calculation of the percent error between the experimental
+y-intercept and predicted y-intercept:
+\begin{align*}
+     & \%_{err} = \left|\frac{experimental - actual}{actual}\right| \times 100\%
+    \\
+     & = \left|\frac{-0.5321\unit{N} - (-0.5\unit{N})}{-0.5\unit{N}}\right| \times 100\%
+    \\
+     & \%_{err} = 6.42\%
+    \\
+     & \%_{err} = 6\%
+\end{align*}
+
+\subsection{Slope of the graph}
+
+The significance of the slope of the graph is that it indicates the rate
+at which the force increases when the position of the weights are shifted
+towards the right.
+
+\subsubsection{Value based off of predicted data}
+
+Based off the line of best-fit in the graph of Figure \ref*{fig:predGraph}
+($y=12.5x-0.5$),
+the slope of the graph is $12.5\unit{Nm^{-1}}$.
+
+What this suggests is that for every meter that the suspended weights
+are moved to the right along the ruler, the force measured by the
+spring balance will increase by $12.5\unit{N}$.
+
+\subsubsection{Value based off of experimental data}
+
+While the line of best-fit yields a slope of $12.635\unit{Nm^{-1}}$,
+this does not equal to the average between the slopes of the trendlines
+with maximum and minimum slope that is $12.702\unit{Nm^{-1}}$. Therefore,
+the latter value will be used instead to deduce that the slope of the
+experimental data graph is $13\unit{Nm^{-1}} \pm 1\unit{Nm^{-1}}$.
+
+The calculations for these values are shown below:
+
+\begin{align*}
+                  & \text{Average calculation:}
+    \\
+                  & \overline{m} = \frac{\sum m_i}{n}
+    \\
+    \text{where } & \overline{m} = \text{ average slope value } /\unit{Nm^{-1}}
+    \\ & m_i = \text{ slope value of trendline with maximum or slope } /\unit{Nm^{-1}}
+    \\ & n = \text{ number of values averaged }
+    \\
+                  & \overline{m} = \frac{13.694\unit{Nm^{-1}} + 11.709\unit{Nm^{-1}}}{2}
+    \\
+                  & \overline{m} = 12.702\unit{Nm^{-1}}
+    \\
+                  & \text{Final slope of experimental data graph calculation:}
+    \\
+                  & m = \overline{m} \pm (m_{min} - m_{max})
+    \\
+    \text{where } & m_{min} = \text{ slope value of trendline with minimum slope } /\unit{Nm^{-1}}
+    \\ & m_{max} = \text{ slope value of trendline with maximum slope } /\unit{Nm^{-1}}
+    \\
+                  & m = 12.702\unit{Nm^{-1}} \pm (13.694\unit{Nm^{-1}} - 11.709\unit{Nm^{-1}})
+    \\
+                  & m = 13\unit{Nm^{-1}} \pm 1\unit{Nm^{-1}}
+\end{align*}
+
+\subsubsection{Comparison of predicted slope and experimental slope}
+
 
 \end{document}
